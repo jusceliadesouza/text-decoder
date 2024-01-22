@@ -183,11 +183,7 @@ button[type="reset"] {
 
 footer {
   width: 100%;
-  height: 3.5rem;
-
-  top: auto;
-  bottom: 0;
-  position: fixed;  
+  padding: 3.5rem;
 
   display: flex;
   align-items: center;
