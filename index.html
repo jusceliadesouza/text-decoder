@@ -6,8 +6,12 @@
 
     <title>Decodificador de Texto</title>
 
+    <!-- Styles -->
     <link rel="stylesheet" href="./src/styles/styles.css" />
+    <link rel="stylesheet" href="./src/styles/buttons.css" />
+    <link rel="stylesheet" href="./src/styles/inputs.css" />
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,17 +21,17 @@
   </head>
 
   <body>
-    <header>
-      <img src="./src/assets/logo.svg" alt="Logo Alura" />
-    </header>
-
-    <main>
+    <div class="container">
       <div class="col-left">
-        <div class="col-left-content">
+        <header>
+          <img src="./src/assets/logo.svg" alt="Logo Alura" />
+        </header>
+
+        <main>
           <textarea placeholder="Digite o seu texto aqui"></textarea>
-          
-          <div class="col-left-footer">
-            <div class="text-info">
+
+          <div class="main-footer">
+            <div class="main-footer-alert">
               <img
                 src="./src/assets/bi_exclamation-circle-fill.svg"
                 alt="Ícone de informação"
@@ -36,27 +40,27 @@
               <p>Apenas letras minúsculas e sem acento</p>
             </div>
 
-            <div class="buttons">
+            <div class="main-buttons">
               <button type="submit">Criptografar</button>
               <button type="reset">Descriptografar</button>
             </div>
           </div>
-        </div>
+        </main>
       </div>
 
       <div class="col-right">
-        <div class="col-right-content">
+        <div class="col-right-box">
           <img src="./src/assets/high-quality-products.svg" alt="" />
           <h1>Nenhuma mensagem encontrada</h1>
           <p>Digite um texto que você deseja criptografar ou descriptografar</p>
         </div>
       </div>
-    </main>
+    </div>
 
     <footer>
       <div class="footer-content">
         <span>
-          Desenvolvido com 💙 por
+          2024. Desenvolvido com 💙 por
           <a href="https://linkedin.com/in/jusceliadesouza" target="_blank"
             >Juscélia de Souza</a
           >
