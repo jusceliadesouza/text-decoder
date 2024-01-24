@@ -39,8 +39,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 
-  font-size: 1rem;
-  font-family: "Inter", sans-serif;
+  font: 400 1rem "Inter", sans-serif;
   background-color: var(--light-blue-100);
   color: var(--gray-500);
 
@@ -132,10 +131,15 @@ main {
 
 .col-right-box h1 {
   margin-top: 1.5rem;
+  line-height: 1.8rem;
 
-  font-size: 1.5rem;
-  font-weight: 700;
+  font: 700 1.5rem "Inter", sans-serif;
   color: var(--gray-500);
+}
+
+.col-right-box p {
+  color: var(--gray-400);
+  line-height: 1.5rem;
 }
 
 .col-right-box img {
