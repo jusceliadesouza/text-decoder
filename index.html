@@ -6,6 +6,13 @@
 
     <title>Decodificador de Texto</title>
 
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./src/assets/logo.svg"
+      type="image/svg+xml"
+    />
+
     <!-- Styles -->
     <link rel="stylesheet" href="./src/styles/styles.css" />
     <link rel="stylesheet" href="./src/styles/buttons.css" />
@@ -29,7 +36,10 @@
         </header>
 
         <main>
-          <textarea placeholder="Digite o seu texto aqui"></textarea>
+          <textarea
+            placeholder="Digite o seu texto aqui"
+            id="message"
+          ></textarea>
 
           <div class="main-footer">
             <div class="main-footer-alert">
@@ -42,8 +52,12 @@
             </div>
 
             <div class="main-buttons">
-              <button type="submit">Criptografar</button>
-              <button type="reset">Descriptografar</button>
+              <button type="submit" onclick="encryptMessage()">
+                Criptografar
+              </button>
+              <button type="reset" onclick="decryptMessage()">
+                Descriptografar
+              </button>
             </div>
           </div>
         </main>
@@ -54,6 +68,16 @@
           <img src="./src/assets/high-quality-products.svg" alt="" />
           <h1>Nenhuma mensagem encontrada</h1>
           <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+        </div>
+        <div class="message-processed" style="display: none;">
+          <div class="message-processed-text" id="messageProcessed"></div>
+          <button
+            id="copyButton"
+            class="button-copy"
+            onclick="copyText()"
+          >
+            Copiar
+          </button>
         </div>
       </div>
     </div>
@@ -68,5 +92,8 @@
         </span>
       </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="./src/scripts/index.js"></script>
   </body>
 </html>

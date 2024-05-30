@@ -74,7 +74,6 @@ main {
   padding-left: 15rem;
   margin-bottom: 2rem;
 
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -106,7 +105,8 @@ main {
 
 .col-right {
   width: 30rem;
-  padding: 12.0625rem 2rem;
+  height: 48rem;
+  padding: 0rem 2rem;
 
   border-radius: 2rem;
   background-color: white;
@@ -119,7 +119,8 @@ main {
 }
 
 .col-right-box {
-  padding: 2rem 0;
+  width: 100%;
+  padding: 0 2rem;
 
   display: flex;
   flex-direction: column;
@@ -144,6 +145,27 @@ main {
 
 .col-right-box img {
   width: 95%;
+}
+
+.message-processed {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.message-processed-text {
+  width: 100%;
+
+  white-space: wrap;
+  word-wrap: break-word;
+  overflow: break-word;
+
+  line-height: 36px;
 }
 
 footer {

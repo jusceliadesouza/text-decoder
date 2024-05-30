@@ -15,7 +15,8 @@ button {
   transition: ease-in-out .3s;
 }
 
-button[type="reset"] {
+button[type="reset"],
+.button-copy {
   border: 2px solid var(--dark-blue-300);
 
   background: transparent;
@@ -39,4 +40,8 @@ a {
 
 a:hover {
   color: var(--dark-blue-300);
+}
+
+.button-copy {
+  
 }
